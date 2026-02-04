@@ -5,31 +5,148 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Netflix Clone</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <div class="logo">Netflix</div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">TV Shows</a></li>
-        <li><a href="#">Movies</a></li>
-        <li><a href="#">My List</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="logo">NETFLIX</div>
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">TV Shows</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">New & Popular</a></li>
+          <li><a href="#">My List</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-bell"></i>
+        <div class="profile">
+          <img src="https://i.pravatar.cc/40" alt="Profile">
+        </div>
+      </div>
+    </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <h1>Welcome to Netflix</h1>
-    <h2>Unlimited movies, TV <br> shows, and more.</h2>
-    <p> Watch anywhere. Cancel anytime.</p>
-    <p>Ready to watch enter your email to create or restart your membership.</p>
-    <input type="email" name="email" id="email" placeholder="Email Address">
-    <button>Watch Now</button>
+    <div class="hero-content">
+      <h1>Unlimited movies, TV shows, and more</h1>
+      <h2>Watch anywhere. Cancel anytime.</h2>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      <div class="email-form">
+        <input type="email" placeholder="Email address">
+        <button>Get Started <i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+    <div class="gradient-overlay"></div>
   </section>
 
+  <!-- Features Sections -->
+  <section class="features">
+    <div class="feature">
+      <div class="feature-text">
+        <h2>Enjoy on your TV</h2>
+        <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+      </div>
+      <div class="feature-image">
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="TV">
+      </div>
+    </div>
+    
+    <div class="feature reverse">
+      <div class="feature-text">
+        <h2>Download your shows to watch offline</h2>
+        <p>Save your favorites easily and always have something to watch.</p>
+      </div>
+      <div class="feature-image">
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="Mobile">
+      </div>
+    </div>
+    
+    <div class="feature">
+      <div class="feature-text">
+        <h2>Watch everywhere</h2>
+        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+      </div>
+      <div class="feature-image">
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="Devices">
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What is Netflix?</span>
+          <i class="fas fa-plus"></i>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>How much does Netflix cost?</span>
+          <i class="fas fa-plus"></i>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Where can I watch?</span>
+          <i class="fas fa-plus"></i>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>How do I cancel?</span>
+          <i class="fas fa-plus"></i>
+        </div>
+      </div>
+    </div>
+    
+    <p class="ready-text">Ready to watch? Enter your email to create or restart your membership.</p>
+    <div class="email-form">
+      <input type="email" placeholder="Email address">
+      <button>Get Started <i class="fas fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2024 Netflix Clone</p>
+    <div class="footer-container">
+      <p>Questions? Call 1-844-505-2993</p>
+      <div class="footer-links">
+        <a href="#">FAQ</a>
+        <a href="#">Help Center</a>
+        <a href="#">Account</a>
+        <a href="#">Media Center</a>
+        <a href="#">Investor Relations</a>
+        <a href="#">Jobs</a>
+        <a href="#">Ways to Watch</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy</a>
+        <a href="#">Cookie Preferences</a>
+        <a href="#">Corporate Information</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Speed Test</a>
+        <a href="#">Legal Notices</a>
+        <a href="#">Only on Netflix</a>
+      </div>
+      <div class="language-selector">
+        <i class="fas fa-globe"></i>
+        <select>
+          <option>English</option>
+          <option>Español</option>
+        </select>
+      </div>
+      <p class="copyright">Netflix Clone</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
